@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="questions.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="quiz_container">
+            <section id="welcome_screen">
+                <div class="welcome_text">
+                    <h1>Welcome to the Quiz</h1>
+                    <p>Test your knowledge with our quiz!</p>
+                </div>
+                <input type="text" name="username" id="username" class="username" placeholder="Enter your name" required>
+                <button id="start_btn">Start Quiz</button>
+            </section>
+            <section id="quiz_screen" class="hidden">
+                <h3 id="question">Loading...</h2>
+                <div class="options" id="options"></div>
+                <button id="next_btn" class="hidden">Next</button>
+            </section>
+            <section id="result_screen" class="hidden">
+                <p id="result"></h2>
+            </section>
+        </div>
+    </body>
+</html>
