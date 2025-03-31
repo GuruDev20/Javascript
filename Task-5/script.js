@@ -24,7 +24,7 @@ startButton.addEventListener("click",()=>{
 
 
 function loadQuizQuestions(){
-    const currentQuestion=quizData[currentQuestionIndex];
+    const currentQuestion=quizData[currentQuestionIndex];   // load questions from questions.js
     questionElement.innerText=(currentQuestionIndex+1)+". "+currentQuestion.question;
     optionsElement.innerHTML="";
     nextButton.classList.add("hidden");
