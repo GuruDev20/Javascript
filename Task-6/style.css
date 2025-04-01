@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.drag_container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    width: 300px;
+}
+
+li {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: grab;
+    border-radius: 5px;
+    text-align: center;
+}
+
+li.dragging {
+    opacity: 0.5;
+    background: #2980b9;
+}
