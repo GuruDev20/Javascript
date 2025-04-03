@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Commerce Shopping Cart</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h2 class="title">E-Commerce Store</h2>
+            <input type="text" name="search" id="search" placeholder="Search for products...">
+            <button id="view_cart">Cart (<span id="cart_count">0</span>)</button>
+        </header>
+        <main>
+            <div id="product_list"></div>
+        </main>
+        <div class="cart_model" id="cart_model">
+            <div class="cart_content">
+                <span class="close">&times;</span>
+                <h3 class="cart_head">Shopping cart</h3>
+                <div class="cart_items"></div>
+                <p>Total: $<span id="cart_total">0.00</span></p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </body>
+</html>
